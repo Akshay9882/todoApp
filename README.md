@@ -10,3 +10,7 @@
  `Database:` MySQL   
  
  Please refer readme in respective folders for setting up the run environment.
+ 
+ Screenshot of application  
+ 
+ ![alt text](https://github.com/Akshay9882/todoApp/blob/master/ScreenShot.JPG)
