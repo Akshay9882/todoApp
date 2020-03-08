@@ -1,8 +1,8 @@
 **TODO APP**    
 
-   - User can add and delete todo   
+   - User can add, delete and mark todo as completed.
 
-   - User can categorize todo as per buckets, buckets can also be added and deleted.
+   - Todos can be categorized into buckets.Buckets also can be added and deleted.
  
 **Technology:**  
  `FrontEnd:` React,Redux   
