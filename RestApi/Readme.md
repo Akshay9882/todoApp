@@ -12,7 +12,8 @@ Version of software used in project:
 - After copying check the properties as per your system and modify if needed.
 
 **=======Configuration for running in IDE==============**   
-- Create java project in Netbeans IDE and copy the src folder in your project directory.
+- Create java project in Netbeans IDE and copy the src folder in your project directory. 
+- Import the libs from Lib folder in your project.  
 - Open the project in Netbeans IDE and then Run it.
 
  
