@@ -90,13 +90,15 @@ public class BusinessLogic {
             b1.setBucketId(bucketid);
             t1.setBucketid(b1);
             t1.setTitle(todotitle);
+            Short status = 1;
+            t1.setStatus(status);
             getEntityManager().persist(t1);
         } catch (Exception e) {
             logger.error("Exception in adding todo", e);
         }
     }
 
-    public void updateTodoStatus(int todoid,short status) {
+    public void updateTodoStatus(int todoid, short status) {
         try {
             logger.info("testing logs");
 //            Todos t1 = new Todos();
