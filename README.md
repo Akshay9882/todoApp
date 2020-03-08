@@ -7,6 +7,6 @@
 **Technology:**  
  `FrontEnd:` React,Redux   
  `BackEnd:` REST API,EJB,JPA   
- `Database:` MySQL DB   
+ `Database:` MySQL   
  
  Please refer readme in respective folders for setting up the run environment.
