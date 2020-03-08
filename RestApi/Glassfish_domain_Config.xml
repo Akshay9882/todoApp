@@ -1,0 +1,10 @@
+   <jdbc-connection-pool driver-classname="com.mysql.jdbc.Driver" name="test" description="" res-type="java.sql.Driver">
+      <property name="password" value="root"></property>
+      <property name="user" value="root"></property>
+      <property name="URL" value="jdbc:mysql://localhost:3306/holidays"></property>
+      <property name="useSSL" value="false"></property>
+      <property name="driverClass" value="com.mysql.cj.jdbc.Driver"></property>
+      <property name="allowPublicKeyRetrieval" value="true"></property>
+      <property name="databaseName" value="holidays"></property>
+    </jdbc-connection-pool>
+    <jdbc-resource pool-name="test" jndi-name="jdbcver5"></jdbc-resource>
