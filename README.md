@@ -3,6 +3,8 @@
    - User can add, delete and mark todo as completed.
 
    - Todos can be categorized into buckets.Buckets also can be added and deleted.
+   
+   - All the buckets and todos are store into database and the available to user always from the application.
  
 **Technology:**  
  `FrontEnd:` React,Redux,Thunk  
