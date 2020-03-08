@@ -5,7 +5,7 @@
    - Todos can be categorized into buckets.Buckets also can be added and deleted.
  
 **Technology:**  
- `FrontEnd:` React,Redux   
+ `FrontEnd:` React,Redux,Thunk
  `BackEnd:` REST API,EJB,JPA   
  `Database:` MySQL   
  
