@@ -38,7 +38,7 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Buckets.findByBucketTitle", query = "SELECT b FROM Buckets b WHERE b.bucketTitle = :bucketTitle")})
 public class Buckets implements Serializable {
 
-    @Size(max = 45)
+    @Size(max = 255)
     @Column(name = "bucket_title")
     private String bucketTitle;
 
@@ -120,5 +120,6 @@ public class Buckets implements Serializable {
     public String toString() {
         return "todo.Buckets[ bucketId=" + bucketId + " ]";
     }
+
 
 }

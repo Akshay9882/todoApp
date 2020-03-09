@@ -10,6 +10,8 @@ import javax.json.bind.annotation.JsonbTransient;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -33,7 +35,7 @@ import org.codehaus.jackson.annotate.JsonIgnore;
     @NamedQuery(name = "Todos.findByTodid", query = "SELECT t FROM Todos t WHERE t.todid = :todid")})
 public class Todos implements Serializable {
 
-    @Size(max = 45)
+    @Size(max = 255)
     @Column(name = "title")
     private String title;
     @Column(name = "status")
@@ -41,6 +43,7 @@ public class Todos implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
+     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name = "todid")
     private Integer todid;
@@ -99,13 +102,6 @@ public class Todos implements Serializable {
         return "todo.Todos[ todid=" + todid + " ]";
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
 
     public Short getStatus() {
         return status;
@@ -113,6 +109,14 @@ public class Todos implements Serializable {
 
     public void setStatus(Short status) {
         this.status = status;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
 }
